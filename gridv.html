@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid Layout RGB</title>
+
+<style>
+    body {
+        background: rgb(243, 231, 218);
+        font-family: Arial, sans-serif;
+        padding: 40px;
+    }
+
+    .container {
+        width: 90%;dxc
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 250px 180px;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 28px;
+        font-weight: bold;
+        border-radius: 20px;
+        border: 3px solid rgb(60, 60, 60);
+    }
+
+    .header {
+        grid-column: 1 / 4;
+        background: rgb(242, 155, 66);
+    }
+
+    .main {
+        background: rgb(116, 185, 255);
+    }
+
+    .empty {
+        background: rgb(255, 255, 255);
+    }
+
+    .sidebar {
+        background: rgb(229, 115, 115);
+    }
+
+    .footer {
+        grid-column: 1 / 4;
+        background: rgb(126, 217, 87);
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="box header">header</div>
+    <div class="box main">main</div>
+    <div class="box empty">empty</div>
+    <div class="box sidebar">sidebar</div>
+    <div class="box footer">footer</div>
+</div>
+
+</body>
+</html>
